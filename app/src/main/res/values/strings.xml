@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uygulama adı -->
+    <string name="app_name">YT Downloader</string>
+
+    <!-- Ana ekran -->
+    <string name="home_title">Video İndir</string>
+    <string name="home_subtitle">144p\'den 4K\'ya kadar indirin</string>
+    <string name="url_hint">Video URL\'sini yapıştırın</string>
+    <string name="btn_paste">Yapıştır</string>
+    <string name="btn_analyze">Analiz Et</string>
+    <string name="btn_download">İndir</string>
+
+    <!-- Kalite seçimi -->
+    <string name="quality_title">Kalite Seç</string>
+    <string name="audio_only">Yalnızca Ses (MP3)</string>
+    <string name="audio_only_subtitle">En yüksek kalitede ses çıkar</string>
+    <string name="quality_4k">4K (2160p)</string>
+    <string name="quality_2k">2K (1440p)</string>
+    <string name="quality_fhd">Full HD (1080p)</string>
+    <string name="quality_hd">HD (720p)</string>
+    <string name="quality_480p">480p</string>
+    <string name="quality_360p">360p</string>
+    <string name="quality_240p">240p</string>
+    <string name="quality_144p">144p</string>
+
+    <!-- İndirme kuyruğu -->
+    <string name="queue_title">İndirme Kuyruğu</string>
+    <string name="queue_empty">Kuyruk boş</string>
+    <string name="queue_empty_subtitle">Henüz aktif indirme yok.</string>
+    <string name="btn_new_download">Yeni İndirme</string>
+    <string name="status_queued">Sırada</string>
+    <string name="status_running">İndiriliyor</string>
+    <string name="status_paused">Duraklatıldı</string>
+    <string name="status_muxing">Birleştiriliyor</string>
+    <string name="status_completed">Tamamlandı</string>
+    <string name="status_failed">Başarısız</string>
+    <string name="status_cancelled">İptal</string>
+    <string name="btn_pause">Duraklat</string>
+    <string name="btn_resume">Devam</string>
+    <string name="btn_cancel">İptal</string>
+    <string name="btn_retry">Yeniden Dene</string>
+
+    <!-- Kütüphane -->
+    <string name="library_title">Kütüphane</string>
+    <string name="library_empty">Kütüphane boş</string>
+    <string name="library_empty_subtitle">İndirdiğiniz videolar burada görünecek.</string>
+    <string name="btn_play">Oynat</string>
+    <string name="btn_share">Paylaş</string>
+    <string name="btn_delete">Sil</string>
+
+    <!-- Ayarlar -->
+    <string name="settings_title">Ayarlar</string>
+    <string name="settings_default_quality">Varsayılan Kalite</string>
+    <string name="settings_max_concurrent">Eşzamanlı İndirme</string>
+    <string name="settings_dark_theme">Karanlık Tema</string>
+    <string name="settings_version">Sürüm</string>
+    <string name="settings_legal">Yasal Uyarı</string>
+    <string name="settings_legal_subtitle">Yalnızca izinli içerikleri indirin</string>
+
+    <!-- Bildirimler -->
+    <string name="notification_channel_name">İndirme Bildirimleri</string>
+    <string name="notification_channel_desc">Arka planda devam eden indirme bildirimleri</string>
+    <string name="notification_title">YT Downloader</string>
+    <string name="notification_starting">İndirme başlatılıyor…</string>
+    <string name="notification_stop">Durdur</string>
+
+    <!-- Hatalar -->
+    <string name="error_invalid_url">Geçersiz URL. Lütfen geçerli bir video bağlantısı girin.</string>
+    <string name="error_network">Ağ bağlantısı kesildi. Yeniden deneniyor…</string>
+    <string name="error_storage_full">Depolama alanı yetersiz. Yer açın ve tekrar deneyin.</string>
+    <string name="error_muxing">Video birleştirme başarısız.</string>
+    <string name="error_unknown">Bilinmeyen hata oluştu.</string>
+</resources>

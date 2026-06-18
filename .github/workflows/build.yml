@@ -1,0 +1,38 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch: # GitHub üzerinden manuel olarak tetiklemeye izin verir
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Kodları indir
+      uses: actions/checkout@v4
+
+    - name: JDK 17 Ayarla
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Gradle'ı Ayarla
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Gradle Wrapper Oluştur (Projede yoksa diye)
+      run: gradle wrapper --gradle-version 8.7
+
+    - name: Çalıştırma İzni Ver
+      run: chmod +x gradlew
+
+    - name: APK Derle (Debug)
+      run: ./gradlew assembleDebug
+
+    - name: Oluşan APK'yı Yükle
+      uses: actions/upload-artifact@v4
+      with:
+        name: yt-downloader-apk
+        path: app/build/outputs/apk/debug/*.apk
